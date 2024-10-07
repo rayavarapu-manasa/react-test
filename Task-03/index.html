@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script  src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <script>
+        var listItem1= React.createElement("li",null,"Item1");
+        var listItem2= React.createElement("li",null,"Item2");
+        var listItem3= React.createElement("li",null,"Item3");
+        var ulItem=React.createElement("ul",null,[listItem1,listItem2,listItem3]);
+        var divItem=React.createElement("div",null,ulItem);
+
+        ReactDOM.render(divItem,document.querySelector("body"));
+    </script>
+</body>
+</html>

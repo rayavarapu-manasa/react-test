@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <script type="text/babel">
+     var heading = <h1> My First JSX Task</h1>
+     var para = <p>A Syntax extension of JavaScript</p>
+     var unorderedList = <ul>
+        <li>JSX allows embedding expressions</li>
+        <li>JSX supports component rendering</li>
+        <li>JSX helps in creating DOM elements</li>
+        
+        </ul>
+    ReactDOM.render([heading,para,unorderedList],document.querySelector("body"));
+    </script>
+    
+</body>
+</html>
